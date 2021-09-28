@@ -9,6 +9,7 @@ int temp = 0;
 int flag = 0;
 
 ErriezDS3231 ds3231;
+
 int bi0[4]={0,0,0,0};
 int bi1[4]={1,0,0,0};
 int bi2[4]={0,1,0,0};
@@ -102,6 +103,7 @@ void refresh2()
     {
         for(int k = 0;k <= 9;k++)
         {
+source $HOME/esp-idf-v4.3.1/esp-idf-v4.3.1/export.sh
             for(int m = 0;m < i ;m++)
             {
                 putnum(10);
@@ -148,7 +150,7 @@ void setup() {
 }
 
 void loop() {
-	//
+
     int HFD;
     int HSD;
     int MFD;
